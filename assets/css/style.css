@@ -1,0 +1,51 @@
+/* Footer */
+.site-footer {
+  background: #1E293B;
+  padding: 24px 80px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* allows wrapping on smaller screens */
+  max-width: 1440px;
+  margin: 0 auto;
+  height: auto;
+}
+
+/* Logo section */
+.footer-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer-logo img {
+  display: block;
+  height: 44px;
+  width: auto;
+}
+
+/* Footer text */
+.footer-text {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%; /* ~22px */
+  color: #FFFFFF;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.footer-text a {
+  color: #FFFFFF;
+  text-decoration: none;
+  margin: 0 4px;
+}
+
+.footer-text a:hover {
+  text-decoration: underline;
+}
