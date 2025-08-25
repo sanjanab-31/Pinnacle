@@ -1,0 +1,104 @@
+/* ===== Header Container ===== */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 80px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* ===== Logo ===== */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo img {
+  height: 44px;
+  object-fit: contain;
+}
+
+/* ===== Navigation ===== */
+.navbar ul {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #0F172A;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #0019FF;
+}
+
+/* ===== Contact Button ===== */
+.btn-primary {
+  padding: 12px 28px;
+  border: 1px solid #0019FF;
+  border-radius: 48px;
+  font-size: 16px;
+  color: #0019FF !important;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: #0019FF;
+  color: #fff !important;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 992px) {
+  .site-header {
+    padding: 16px 24px;
+  }
+
+  .navbar ul {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar ul {
+    display: none; /* hide menu for mobile */
+    flex-direction: column;
+    background: #fff;
+    position: absolute;
+    top: 88px;
+    right: 0;
+    width: 220px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+
+  .navbar ul.show {
+    display: flex;
+  }
+
+  /* Add hamburger menu */
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 769px) {
+  .menu-toggle {
+    display: none;
+  }
+}
