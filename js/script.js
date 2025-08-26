@@ -29,3 +29,7 @@
         item.classList.toggle('active');
       });
     });
+  
+document.querySelector(".contact-btn").addEventListener("click", () => {
+  document.querySelector("#contact").scrollIntoView({ behavior: "smooth" });
+});
