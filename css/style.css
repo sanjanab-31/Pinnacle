@@ -552,17 +552,17 @@ footer p a:hover {
 ================================ */
 .approach-section {
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
   justify-content: center;
   align-items: flex-start;
-  padding: 100px 120px 120px 120px;
+  padding: 100px 40px 120px 120px;
   gap: 80px;
   width: 100%;
   max-width: 1440px;
   margin: auto;
   background: #F8FAFC;
-  border-radius: 0 0 56px 56px;
-  position: relative;
+  /* border-radius: 0 0 56px 56px; */
+  /* position: relative; */
   box-sizing: border-box;
 }
 
@@ -596,10 +596,11 @@ footer p a:hover {
 
 
 .approach-image {
-  max-width: 420px;
+  max-width: 480px;
   margin-top: 20px;
   border-radius: 20px;
-  /* position: absolute; */
+  height: 320px;
+    /* position: absolute; */
   /* transform: rotate(100deg); */
   /* filter: drop-shadow(20px 30px 60px rgba(7, 11, 52, 0.3)); */
 }
@@ -609,9 +610,10 @@ footer p a:hover {
   display: flex;
   flex-direction: column;
   /* justify-content: flex-start; */
-  width: 550px;
-  top: 160px;
-  gap: 1px;
+  width: 700px;
+  top: 155px;
+  left: -60px;
+  /* gap: 3px; */
   position: relative;
 
 }
