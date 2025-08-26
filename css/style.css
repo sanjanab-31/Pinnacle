@@ -555,8 +555,8 @@ footer p a:hover {
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
-  padding: 80px 60px;
-  gap: 60px;
+  padding: 100px 120px 120px 120px;
+  gap: 80px;
   width: 100%;
   max-width: 1440px;
   margin: auto;
@@ -570,9 +570,9 @@ footer p a:hover {
 .approach-left {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 32px;
-  max-width: 520px;
+  /* align-items: flex-start; */
+  gap: 20px;
+  width: 650px;
   position: relative;
 }
 
@@ -586,92 +586,47 @@ footer p a:hover {
 .approach-heading {
   font-family: 'Unbounded', sans-serif;
   font-weight: 400;
-  font-size: 56px;
+  font-size: 64px;
   line-height: 110%;
   text-transform: uppercase;
   color: #0F172A;
   margin: 0;
 }
 
-.approach-arrow {
-  width: 60px;
-  height: 60px;
-  position: relative;
-}
 
-.approach-arrow::before {
-  content: "";
-  position: absolute;
-  width: 42px;
-  height: 44px;
-  border: 2px solid #0F172A;
-  transform: rotate(-45deg);
-  top: 8px;
-  left: 8px;
-}
 
 .approach-image {
-  max-width: 220px;
+  max-width: 420px;
   margin-top: 20px;
-  transform: rotate(100deg);
-  filter: drop-shadow(20px 30px 60px rgba(7, 11, 52, 0.3));
+  border-radius: 20px;
+  /* position: absolute; */
+  /* transform: rotate(100deg); */
+  /* filter: drop-shadow(20px 30px 60px rgba(7, 11, 52, 0.3)); */
 }
 
 /* Right side (text) */
 .approach-right {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  max-width: 520px;
+  /* justify-content: flex-start; */
+  width: 550px;
+  top: 160px;
+  gap: 1px;
+  position: relative;
+
 }
 
 .approach-text {
   font-family: 'Montserrat', sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 500;
   line-height: 150%;
+  text-align: justify;
   color: #64748B;
-  margin: 0;
+  /* margin: 0; */
 }
 
-/* Responsive */
-@media (max-width: 1024px) {
-  .approach-section {
-    flex-direction: column;
-    padding: 60px 40px;
-    gap: 40px;
-  }
 
-  .approach-left, .approach-right {
-    max-width: 100%;
-    text-align: center;
-    align-items: center;
-  }
-
-  .approach-title-row {
-    justify-content: center;
-    gap: 20px;
-  }
-
-  .approach-heading {
-    font-size: 42px;
-  }
-
-  .approach-image {
-    transform: rotate(0);
-    margin: 20px auto 0;
-  }
-}
-
-@media (max-width: 768px) {
-  .approach-heading {
-    font-size: 32px;
-  }
-
-  .approach-text {
-    font-size: 16px;
-  }
-}
 
 /* ===========================
    WHY CHOOSE US SECTION
