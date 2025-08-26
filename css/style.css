@@ -208,7 +208,7 @@ nav a:hover {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding: 72px 120px 120px;
+  padding: 100px 120px 0 120px;
   gap: 80px;
   background: #F8FAFC;
   width: 100%;
@@ -234,37 +234,31 @@ nav a:hover {
   margin: 0;
 }
 
-.about-left .arrow {
-  width: 60px;
-  height: 60px;
-  border: 2px solid #0F172A;
-  transform: rotate(-45deg);
-  position: relative;
-  top: 10px;
-}
 
 .about-right {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 1px;
   width: 650px;
   position: relative;
+  top: 120px;
 }
 
 .about-text {
   font-size: 20px;
   font-weight: 500;
   line-height: 150%;
+  text-align:justify;
   color: #64748B;
 }
 
 .about-image {
   position: absolute;
-  left: -200px;
-  bottom: 0;
-  width: 240px;
-  transform: rotate(110deg);
-  filter: drop-shadow(40px 60px 100px rgba(7, 11, 52, 0.3));
+  left: -550px;
+  bottom: 24px;
+  width: 480px;
+  /* transform: rotate(110deg); */
+  /* filter: drop-shadow(40px 60px 100px rgba(7, 11, 52, 0.3)); */
 }
 
 /* ================= PROBLEMS SECTION ================= */
