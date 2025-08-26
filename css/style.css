@@ -307,8 +307,10 @@ nav a:hover {
 }
 
 .problem-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transform: translateY(-10px) scale(1.02);
+  border-color: #0019FF; /* light blue glow */
+   box-shadow: 0 10px 25px rgba(56, 189, 248, 0.3);
+
 }
 
 .problem-number {
