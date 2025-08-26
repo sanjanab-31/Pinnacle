@@ -266,7 +266,7 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 58px 120px 135px;
+  padding: 0px 0px 50px;
   gap: 64px;
   width: 100%;
   box-sizing: border-box;
@@ -295,12 +295,12 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   padding: 40px;
-  gap: 16px;
+  gap: 18px;
   flex: 1;
   min-width: 300px;
   max-width: 380px;
-  height: 276px;
-  border: 1px solid #64748B;
+  height: 200px;
+  border: 2px solid #64748B;
   border-radius: 40px;
   background: #fff;
   transition: all 0.3s ease;
@@ -637,8 +637,8 @@ footer p a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 73px 120px 74px;
-  gap: 64px;
+  padding: 7px 120px 80px;
+  gap: 60px;
   background: #0F172A;
 }
 
@@ -653,7 +653,7 @@ footer p a:hover {
 }
 
 .choose h1 span {
-  color: #2563EB; /* blue */
+  color: #0019FF; /* blue */
   font-weight: 700;
 }
 
@@ -678,10 +678,17 @@ footer p a:hover {
   flex: 1 1 300px;
   max-width: 371px;
   min-height: 293px;
-  border: 1px solid #FFFFFF;
+  border: 2px solid #FFFFFF;
   border-radius: 40px;
   background: transparent;
   color: #FFFFFF;
+  transition: all 0.3s ease; /* smooth effect */
+}
+
+.choose .card:hover {
+  transform: translateY(-10px) scale(1.02);
+  border-color: #0019FF; /* light blue glow */
+  box-shadow: 0 10px 25px rgba(56, 189, 248, 0.3);
 }
 
 .choose .card h3 {
@@ -727,10 +734,9 @@ footer p a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 70px 50px;
+  padding: 10px 0 50px;
   background: #fff;
-  border-radius: 0 0 56px 56px;
-  gap: 70px;
+  gap: 20px;
 }
 
 .corporate h1 {
@@ -743,7 +749,7 @@ footer p a:hover {
 }
 
 .corporate h1 span {
-  color: #2563EB; /* blue */
+  color: #0019FF; /* blue */
   font-weight: 700;
 }
 
@@ -803,7 +809,7 @@ footer p a:hover {
 ================================ */
 .client {
   background: #0F172A;
-  padding: 120px 40px;
+  padding: 10px 0 50px;
   text-align: center;
 }
 
@@ -817,7 +823,7 @@ footer p a:hover {
 }
 
 .client h1 span {
-  color: #2563EB;
+  color: #0019FF;
   font-weight: 700;
 }
 
@@ -850,7 +856,7 @@ footer p a:hover {
   font-family: 'Montserrat', sans-serif;
   font-size: 48px;
   font-weight: 700;
-  color: #4A5CFF;
+  color: #0019FF;
   display: block;
   margin-bottom: 20px;
 }
