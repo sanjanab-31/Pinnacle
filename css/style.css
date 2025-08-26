@@ -119,9 +119,9 @@ nav a:hover {
   align-items: center;
   background: #FFFFFF;
   border-radius: 40px;
-  padding: 16px 24px;
-  gap: 16px;
-  width: 320px;
+  padding: 3px 24px;
+  gap: 1px;
+  width: 260px;
 }
 
 .input-group .email-icon {
@@ -1118,7 +1118,7 @@ footer p a:hover {
       padding: 6px 24px;
       border: none;
       background: #0019FF;
-      color: #fff;
+      color: #ffffff;
       border-radius: 80px;
       font-size: 16px;
       font-weight: 700;
@@ -1129,7 +1129,8 @@ footer p a:hover {
     .form-row button .arrow {
       width: 40px;
       height: 40px;
-      background: #F8FAFC;
+      background: #ffffff;
+      color:  #0019FF;
       border-radius: 50%;
       display: flex;
       align-items: center;
