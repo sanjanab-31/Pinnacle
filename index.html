@@ -6,6 +6,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
   <title>Pinnacle Wealth Creation Services</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.png">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -107,7 +108,7 @@
   <!-- ================= HEADLINE SECTION ================= -->
   <section class="headline-section">
     <h1 class="headline-text">
-      WHAT WE CAN DO <span>FOR YOU?</span>
+      WHAT WE CAN  <span>DO FOR YOU?</span>
     </h1>
   </section>
 
@@ -400,24 +401,24 @@
           <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
           <a href="#"><i class="fa-brands fa-instagram"></i></a>
           <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="#"><i class="fa-brands fa-youtube"></i></a>
         </div>
       </div>
 
       <div class="contact-right">
         <div class="contact-form">
-          <h3>Get a Free consultation</h3>
-          <div class="form-row">
-            <div class="input-group">
-                <span class="email-icon"><i class="fa-solid fa-envelope"></i></span>
-                <input type="email" placeholder="Enter your email to get started" required>
-            </div>
-            <button>
-              Get Started
-              <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
-            </button>
-          </div>
-        </div>
+  <h3>Get a Free consultation</h3>
+  <div class="form-row">
+    <div class="input-group">
+      <span class="email-icon"><i class="fa-solid fa-envelope"></i></span>
+      <input type="email" id="user_email" placeholder="Enter your email to get started" required>
+    </div>
+    <button id="sendBtn">
+      Get Started
+      <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
+    </button>
+  </div>
+</div>
+
 
         <div class="contact-details">
           <div class="contact-item">
@@ -450,7 +451,10 @@
       <a href="#">Terms of Service</a>
     </p>
   </footer>
-
-</body>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your EmailJS public key
+</script>
 <script src="js/script.js"></script>
+</body>
 </html>
