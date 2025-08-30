@@ -1,3 +1,4 @@
+  
   const cards = document.querySelectorAll('.client-card');
   let current = 0;
 
@@ -59,3 +60,26 @@ document.getElementById('sendBtn').addEventListener('click', function(e) {
       });
 });
 
+document.getElementById("toggleArrow").addEventListener("click", function () {
+  const cards = document.getElementById("loanCards");
+  this.textContent = cards.classList.contains("show") ? "➘" : "➚"; // switch arrow
+  cards.classList.toggle("show");
+});
+ document.addEventListener('DOMContentLoaded', function () {
+      document.querySelectorAll('.service-category').forEach(category => {
+        const header = category.querySelector('.category-header');
+        const arrow = header.querySelector('.arrow');
+
+        header.addEventListener('click', () => {
+          category.classList.toggle('open');
+          arrow.classList.toggle('open');
+        });
+
+        // Touch support for mobile
+        header.addEventListener('touchstart', (e) => {
+          e.preventDefault();
+          category.classList.toggle('open');
+          arrow.classList.toggle('open');
+        });
+      });
+    });
